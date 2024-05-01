@@ -10,19 +10,20 @@ function App() {
 
     <div className='appWrapper'>
 <div className="formwrapper">
-<form action= " submit">
-<label>Text input: </label>
-<input type="text"></input>
+
+<form action= "submit" method="get" enctype="multipart/form-data">
+<label for="text">Text input: </label>
+<input type="text" required></input>
 
 <br></br>
 <br></br>
 
 <label>File input: </label>
-<input type="file"></input>
+<input type="file" name="text file" required></input>
 
 <br></br>
 
-<button  onclick=""> submit</button>
+<button  onclick="" className='submitB'> submit</button>
 </form>
 </div>
     </div>
